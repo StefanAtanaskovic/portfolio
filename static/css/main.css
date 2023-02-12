@@ -76,6 +76,10 @@
     padding: 0 0.6rem;
 }
 
+.content-item ul {
+  list-style-type: none;
+}
+
 /* Works on Firefox */
 * {
   scrollbar-width: none;

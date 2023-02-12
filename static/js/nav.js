@@ -1,10 +1,7 @@
-let navigationElements = document.getElementById("nav").getElementsByTagName("*");
+sessionStorage.setItem("currentNav", "aboutNav");
 
 function setSelected(clickedId) {
-    Array.from(navigationElements).forEach((elem) => {
-        elem.classList.remove("selected");
-    });
-
-    console.log("blaa", clickedId);
+    document.getElementById(sessionStorage.getItem("currentNav")).classList.remove("selected");
     document.getElementById(clickedId).classList.add("selected");
+    sessionStorage.setItem("currentNav", clickedId);
 }
