@@ -1,7 +1,10 @@
-sessionStorage.setItem("currentNav", "aboutNav");
+let curNav = "aboutNav";
 
 function setSelected(clickedId) {
-    document.getElementById(sessionStorage.getItem("currentNav")).classList.remove("selected");
+    if (curNav === clickedId) {
+        return
+    }
+    document.getElementById(curNav).classList.remove("selected");
     document.getElementById(clickedId).classList.add("selected");
-    sessionStorage.setItem("currentNav", clickedId);
+    curNav = clickedId;
 }

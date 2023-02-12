@@ -15,9 +15,7 @@
 }
 
 .container {
-    max-height: 100vh;
-    min-height: 100vh;
-
+    height: 100vh;
 }
 
 .nav {
@@ -36,6 +34,7 @@
     flex: 1;
     margin: 0 0.2rem;
     text-align: center;
+    transition: color 0.4s, background-color 0.4s;
 }
 
 .nav a:hover {

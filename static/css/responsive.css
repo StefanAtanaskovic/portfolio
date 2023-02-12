@@ -2,10 +2,7 @@
   .heading {
       fonts-size: 8px;
   }
-}
-
-@media only screen and (max-width: 300px) {
-  * {
-      fonts-size: 8px;
-  }
+  .container {
+    max-height: 100vh;
+    }
 }
