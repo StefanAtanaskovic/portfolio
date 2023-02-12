@@ -1,0 +1,11 @@
+@media only screen and (max-width: 400px) {
+  .heading {
+      fonts-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  * {
+      fonts-size: 8px;
+  }
+}

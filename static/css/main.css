@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+.flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    height: 100vh;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100%;
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #fff;
+   padding: 0.2rem 0;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 0.2rem;
+    flex: 1;
+    margin: 0 0.2rem;
+    text-align: center;
+}
+
+.nav a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.selected {
+    color: #000;
+    background-color: #fff;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading p {
+    text-align: center;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+.heading h1 {
+    padding: 1rem;
+    border-bottom: 2px solid #fff;
+}
+
+.content {
+    height: 400px;
+    overflow: scroll;
+    margin-top: 1rem;
+  scroll-behavior: smooth;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05em;
+  line-height: 1.625;
+}
+
+.content-item {
+    height: 400px;
+    text-align: center;
+    padding: 0 0.6rem;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  display: none;
+}

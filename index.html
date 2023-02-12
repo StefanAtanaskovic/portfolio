@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+   <main class="container flex-col">
+       <header class="heading">
+            <h1>Stefan Atanaskovic</h1>
+            <p>Software Engineer</p>
+           <nav class="nav" id="nav">
+        <a href="#about" onclick="setSelected(this.id)" id="aboutNav" class="selected">ABOUT</a>
+        <a href="#cv" onclick="setSelected(this.id)" id="cvNav">CV</a>
+        <a href="#contacts" onclick="setSelected(this.id)" id="contactsNav">CONTACTS</a>
+       </nav>
+       </header>
+       <section class="content">
+           <article class="content-item" id="about">
+               Hi, I'm Stefan. I'm a experienced software engeneer.<br />
+               I'm passionate about building highly performant and optimized applications.<br />
+               In my spare time I still do some coding xD and I enjoy training BJJ.
+           </article>
+           <article class="content-item" id="cv">
+               I have been programming for over 7 years, profesinaly for over 4 years.<br />
+               Most of my exerience professional experience is in Python and JavaScript and AWS.<br />
+               I have helped build both backends and fronteds for many clients.<br />
+               I'm my free time I enjoy playing with lower level languages like Rust and C.<br />
+               If you are interested you can checkout <a href="./static/files/stefan_atanaskovic_cv.pdf" download>my CV</a>.
+           </article>
+           <article class="content-item" id="contacts">
+               If you are interested in reaching out: <br />
+               <ul>
+                <li> <a href="https://www.linkedin.com/in/stefan-atanaskovi%C4%87-494569180/">LinkedIn</a> </li>
+                <li> <a href="https://github.com/StefanAtanaskovic">Github</a> </li>
+               </ul>
+           </article>
+       </section>
+   </main>
+   <script src="./static/js/nav.js"></script>
+</body>
+</html>
