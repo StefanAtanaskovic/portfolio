@@ -1,7 +1,6 @@
 let curNav = "aboutNav";
 
-function setSelected(clickedId, event) {
-    event.preventDefault();
+function setSelected(clickedId) {
     if (curNav === clickedId) {
         return
     }
