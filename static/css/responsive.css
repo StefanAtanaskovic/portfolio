@@ -6,6 +6,10 @@
   .content {
         font-size: 0.7rem;
   }
+
+  .container {
+    max-height: 100vh;
+}
 }
 
 @media only screen and (max-width: 300px) {
