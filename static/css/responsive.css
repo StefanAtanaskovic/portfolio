@@ -1,8 +1,20 @@
 @media only screen and (max-width: 400px) {
   .heading {
-      fonts-size: 8px;
+      font-size: 0.8rem;
   }
-  .container {
-    max-height: 100vh;
-    }
+
+  .content {
+        font-size: 0.7rem;
+  }
 }
+
+@media only screen and (max-width: 300px) {
+  .heading {
+      font-size: 0.6rem;
+  }
+
+  .content {
+        font-size: 0.5rem;
+  }
+}
+
